@@ -1,11 +1,12 @@
 const sqlite3 = require('sqlite3');
 const sqlite = require('sqlite');
 const express = require('express');
+const cors = require('cors')
 
 const app = express()
 
 app.use(express.json()) // for parsing application/json
- 
+app.use(cors())
 
 const connectDB = async () => {
      // open the database
@@ -45,6 +46,6 @@ app.post('/notes', async (req, res) => {
     res.status(200).json({message:'insert success'})
 })
  
-app.listen(3000, () => {
+app.listen(3010, () => {
     console.log('server ready.')
 })

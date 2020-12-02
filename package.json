@@ -9,6 +9,7 @@
   "author": "Teerasej Jiraphatchandej",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "sqlite": "^4.0.17",
     "sqlite3": "^5.0.0"
