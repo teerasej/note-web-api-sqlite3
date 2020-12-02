@@ -11,7 +11,7 @@ const connectDB = async () => {
      // open the database
      console.log('connecting db...')
     const db = await sqlite.open({
-        filename: '/tmp/database.db',
+        filename: 'database.db',
         driver: sqlite3.Database
       })
     await db.exec('CREATE TABLE IF NOT EXISTS notes (id INTEGER PRIMARY KEY AUTOINCREMENT, message TEXT)')
